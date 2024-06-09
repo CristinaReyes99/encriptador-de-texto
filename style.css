@@ -247,13 +247,13 @@ footer {
 }
 
 .social-icon:nth-last-of-type(1) {
-    background-image: url(/imagenes/logoLikedIn.png);
+    background-image: url(https://github.com/CristinaReyes99/encriptador-de-texto/blob/main/imagenes/logoLikedIn.png?raw=true);
     width: 65px;
     height: 65px;
 }
 
 .social-icon:nth-last-of-type(2) {
-    background-image: url(/imagenes/logoGithub.png);
+    background-image: url(https://github.com/CristinaReyes99/encriptador-de-texto/blob/main/imagenes/logoGithub.png?raw=true);
     width: 65px;
     height: 65px;
 }
