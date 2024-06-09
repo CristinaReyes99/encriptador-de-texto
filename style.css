@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    min-height: 60px;
+    background-color: #ABBECA;
+    padding: 0 20px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.tituloPrincipal {
+    font-family: "Lobster", sans-serif;
+    font-size: 1.7em;
+    color: #305368;
+}
+
+.encabezado img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.containerTransformarTexto,
+.containerTextoTransformado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.transformarTexto {
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingresarTexto {
+    width: 450px;
+    height: 200px;
+    position: relative;
+}
+
+.ingresarTexto textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #3C5B6F;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px 15px 15px 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #305368;
+    line-height: 1.5;
+    resize: none;
+}
+
+.ingresarTexto label {
+    position: absolute;
+    top: -23px;
+    left: 15px;
+    font-size: 20px;
+    color: #305368;
+    transition: .5s ease; 
+    background: white;
+    padding: 0 13px;
+    pointer-events: none;
+}
+
+.ingresarTexto textarea:focus ~ label {
+    font-size: 15px;
+    background: white;
+}
+
+.ingresarTexto textarea::-webkit-scrollbar,
+.textoTransformado textarea::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.ingresarTexto textarea::-webkit-scrollbar-track,
+.textoTransformado textarea::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.ingresarTexto textarea::-webkit-scrollbar-thumb,
+.textoTransformado textarea::-webkit-scrollbar-thumb {
+    background: #3C5B6F;
+    border-radius: 5px;
+}
+
+.ingresarTexto textarea::-webkit-scrollbar-thumb:hover,
+.textoTransformado textarea::-webkit-scrollbar-thumb:hover {
+    background: #ABBECA;
+}
+
+.botonesTransformarTexto {
+    direction: rtl;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+
+.container_boton {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: #7c818cca;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container_boton:hover {
+    background-color: #305368; 
+    transform: scale(1.1); 
+}
+
+.container_boton:active {
+    transform: scale(0.90); 
+}
+
+.imagenPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.imagenRobot {
+    height: 300px;
+}
+
+.containerTextoTransformado {
+    flex-direction: column;
+}
+
+.textoTransformado p {
+    padding-bottom: 15px;
+    text-align: center;
+    color: #305368;
+    font-size: 1.5em;
+}
+
+.textoTransformado textarea {
+    width: 750px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid #3C5B6F;
+    border-radius: 10px;
+    padding: 20px 15px 15px 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #305368;
+    line-height: 1.5;
+    resize: none;
+    
+}
+
+.BotonesTextoTransformado {
+    padding: 33px;
+}
+
+footer {
+    background: #3C5B6F;
+    color: #fff;
+    padding: 20px;
+}
+
+.container-Footer {
+    display: flex;
+}
+
+.container-logoFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logoFooter {
+    margin-right: 10px;
+    width: 150px;
+}
+
+.TituloLogo {
+    font-family: "Lobster", sans-serif;
+    font-size: 3em;
+}
+
+.container-redesSociales {
+    padding-inline-start: 200px;
+}
+
+.container-redesSociales p {
+    font-size: 1.5em;
+    color: #fff;
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+}
+
+.container-IconsSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #ABBECA;
+    background: #3C5B6F;
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #7c818cca;
+    transform: scale(1.1); 
+}
+
+.social-icon:active {
+    transform: scale(0.90);
+}
+
+.social-icon:nth-last-of-type(1) {
+    background-image: url(/imagenes/logoLikedIn.png);
+    width: 65px;
+    height: 65px;
+}
+
+.social-icon:nth-last-of-type(2) {
+    background-image: url(/imagenes/logoGithub.png);
+    width: 65px;
+    height: 65px;
+}
+
+.copyright {
+    display: block;
+    color: #ffffff;
+    opacity: 0.5;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 0 5px;
+    }
+
+    .tituloPrincipal {
+        font-size: 1.5em;
+    }
+
+    .encabezado img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .containerTransformarTexto {
+        padding: 10px;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .ingresarTexto {
+        width: 300px;
+        height: 175px;
+    }
+
+    .transformarTexto {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .imagenPrincipal {
+        padding: 2px;
+    }
+
+    .textoTransformado textarea {
+        width: 100%;
+        max-width: 450px;
+        height: 175px;
+    }
+
+    .container-logoFooter,
+    .container-redesSociales {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .logoFooter {
+        width: 75px;
+    }
+
+    .TituloLogo {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .containerTransformarTexto {
+        flex-direction: column;
+    }
+
+    .ingresarTexto,
+    .textoTransformado textarea {
+        width: 300px;
+        height: 175px;
+    }
+}

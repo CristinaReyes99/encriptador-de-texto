@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="imagenes/logo.png" alt="Logo" class="imagenEncabezado">
+            <p class="tituloPrincipal">Encriptador de Textos</p>
+        </div>
+    </header>
+    <main>
+        <div class="containerTransformarTexto">
+            <div class="transformarTexto">
+                <div class="ingresarTexto">
+                    <textarea id="escribirTexto" name="ingresarTexto" required></textarea>
+                    <label for="escribirTexto">Ingrese texto aquí:</label>
+                </div>
+                <div class="botonesTransformarTexto">
+                    <button onclick="encriptarTexto();" class="container_boton">Encriptar</button>
+                    <button onclick="desencriptarTexto();" class="container_boton">Desencriptar</button>
+                </div>
+            </div> 
+            <div class="imagenPrincipal">
+                <img src="imagenes/robot-ia.jpg" id="imagenContainer" alt="Imagen robot-ia de kjpargeter en Freepik" class="imagenRobot">
+            </div>
+        </div>
+
+        <div class="containerTextoTransformado">
+            <div class="textoTransformado">
+                <p id="devolversubTitulo"></p>
+                <textarea id="devolverTexto" name="textoConvertido" placeholder="Aquí se devuelve su petición:" required readonly></textarea>
+            </div>
+            <div class="BotonesTextoTransformado">
+                <button onclick="copiarTexto();" id="botonParaCopiar" class="container_boton">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-Footer">
+            <div class="container-logoFooter">
+                <img src="/imagenes/logoBlanco.png" alt="Logo" class="logoFooter"> 
+                <p class="TituloLogo">Encriptador de Texto</p>
+            </div>  
+            <div class="container-redesSociales">
+                <p>Cóntactame</p>
+                <div class="container-IconsSocial">
+                    <a href="https://github.com/CristinaReyes99" class="social-icon" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/cristinareyeslucas/" class="social-icon" target="_blank"></a>
+                </div>
+            </div>      
+        </div>    
+        <span class="copyright"> &copy;2024, copyright</span> 
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
